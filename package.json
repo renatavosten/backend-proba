@@ -4,8 +4,10 @@
   "description": "Instaclone backend",
   "main": "src/index.js",
   "scripts": {
-    "serve": "nodemon --exec babel-node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "nodemon src/index.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm install", 
+    "start": "babel-node src/index.js"
   },
   "author": "",
   "license": "ISC",
